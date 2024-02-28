@@ -29,7 +29,7 @@ export default () => (
           Our Clients <span tw="text-primary-500">Love Us.</span>
         </>
       }
-      description="Here are what some of our amazing customers are saying about our marketing professionals. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      description="Here is what some of our amazing customers are saying about our work on Thumbtack"
       testimonials={[
         {
           imageSrc:
@@ -61,7 +61,7 @@ export default () => (
       subheading="FAQs"
       heading={
         <>
-          Do you have <span tw="text-primary-500">Questions ?</span>
+          Do you have <span tw="text-red-500">Questions ?</span>
         </>
       }
     />

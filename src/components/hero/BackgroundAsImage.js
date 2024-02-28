@@ -28,14 +28,14 @@ const LeftColumn = tw.div`flex flex-col items-center lg:block`;
 const RightColumn = tw.div`w-full sm:w-5/6 lg:w-1/2 mt-16 lg:mt-0 lg:pl-8`;
 
 const Heading = styled.h1`
-  ${tw`text-3xl text-center lg:text-left sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-100 leading-none`}
+  ${tw`text-3xl text-center lg:text-left sm:text-4xl lg:text-5xl xl:text-5xl font-black text-gray-100 leading-none`}
   span {
     ${tw`inline-block mt-2`}
   }
 `;
 
 const SlantedBackground = styled.span`
-  ${tw`relative text-primary-500 px-4 -mx-4 py-2`}
+  ${tw`relative text-xl text-red-500 px-4 -mx-4 py-2`}
   &::before {
     content: "";
     ${tw`absolute inset-0 bg-gray-100 transform -skew-x-12 -z-10`}
@@ -44,7 +44,7 @@ const SlantedBackground = styled.span`
 
 const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-4 border-blue-500 font-medium text-sm`;
 
-const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 text-primary-500 font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-gray-100 focus:shadow-outline`;
+const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 text-red-500 font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-gray-100 focus:shadow-outline`;
 
 const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
   padding-bottom: 56.25% !important;
@@ -73,7 +73,7 @@ export default () => {
     </NavLinks>,
     <NavLinks key={2}>
       <PrimaryLink href="/#">
-        Hire Us
+        Quote
       </PrimaryLink>
     </NavLinks>
   ];
@@ -85,11 +85,11 @@ export default () => {
         <StyledHeader links={navLinks} />
         <TwoColumn>
           <LeftColumn>
-            <Notification>We have now launched operations in Europe.</Notification>
+            <Notification>We do full service interior design and builds in the Greater Seattle area</Notification>
             <Heading>
-              <span>Hire the best</span>
+              <span>DJ's Custom Interiors</span>
               <br />
-              <SlantedBackground>Marketing Team.</SlantedBackground>
+              <SlantedBackground>You dream it, we build it.</SlantedBackground>
             </Heading>
             <PrimaryAction>Read Customer Stories</PrimaryAction>
           </LeftColumn>
