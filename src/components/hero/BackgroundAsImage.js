@@ -6,6 +6,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import Header, { NavLink, NavLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 import BackgroundHeroImg from "../../images/demo/basement_hero1.jpg"
+import DJCustomLogo from "../../images/djci_logo.png";
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
@@ -20,6 +21,12 @@ const Container = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover`}
   //background-image: url("https://images.unsplash.com/photo-1522071901873-411886a10004?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80");
   background-image: url(${BackgroundHeroImg});
+`;
+
+const DJLogo = styled.div`
+  background-image: url(${DJCustomLogo});
+  width: 500px;
+  height: 245px;
 `;
 
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-25`;
@@ -60,7 +67,7 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      {/*<NavLink href="#">
+      <NavLink href="#">
         About
       </NavLink>
       <NavLink href="#">
@@ -76,7 +83,7 @@ export default () => {
     <NavLinks key={2}>
       <PrimaryLink href="/#">
         Quote
-      </PrimaryLink>*/}
+      </PrimaryLink>
     </NavLinks>
   ];
 
@@ -84,16 +91,16 @@ export default () => {
     <Container>
       <OpacityOverlay />
       <HeroContainer>
-        <StyledHeader links={navLinks} />
+        {/*uncomment below for menu*/}
+        {/*<StyledHeader links={navLinks} />*/}
         <TwoColumn>
           <LeftColumn>
-            <Notification>We do full service interior design and builds in the Greater Seattle area</Notification>
+            <DJLogo />
             <Heading>
-              <span>DJ's Custom Interiors</span>
-              <br />
               <SlantedBackground>You dream it, we build it.</SlantedBackground>
-            </Heading>
+              <Notification>We do full service interior design and builds in the Greater Seattle area</Notification>
 
+            </Heading>
           </LeftColumn>
           <RightColumn>
           {/*  <StyledResponsiveVideoEmbed*/}
