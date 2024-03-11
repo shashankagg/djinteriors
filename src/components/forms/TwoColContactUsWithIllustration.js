@@ -33,7 +33,7 @@ const SubmitButton = tw(PrimaryButtonBase)`inline-block lg:ml-6 mt-6 lg:mt-0`
 export default ({
   subheading = "Contact Us",
   heading = <>Feel free to <span tw="text-primary-500">get in touch</span><wbr/> with us.</>,
-  description = <>Phone: <span tw="text-primary-500">(646) 460 5511</span><wbr/> <br/>
+  description = <>Phone: <span tw="text-primary-500">(646) 404 1306</span><wbr/> <br/>
                           Email: <span tw="text-primary-500">custominteriorsbydj@gmail.com</span></>,
                   submitButtonText = "Contact Me", formAction = "#",
   formMethod = "get",
