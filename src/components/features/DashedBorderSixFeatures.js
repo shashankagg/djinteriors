@@ -55,7 +55,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
 
 export default () => {
   /*
-   * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component):
+   * This components has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component):
    *  1) imageSrc - the image shown at the top of the card
    *  2) title - the title of the card
    *  3) description - the description of the card
@@ -65,20 +65,29 @@ export default () => {
   const cards = [
     {
       imageSrc: ShieldIconImage,
-      title: "Ads Management",
-      description: "We create and manage ads that you need, from creation to deployment. Lorem ipsum donor sit amet consicou."
+      title: "5D Design Rendering",
+      description: "We create realistic rendering and designs for your interior spaces using state-of-the-art software. This helps our customers visualize the space, furniture layout and the final design."
     },
-    { imageSrc: SupportIconImage, title: "Video Marketing" },
-    { imageSrc: CustomizeIconImage, title: "Customer Relation" },
-    { imageSrc: ReliableIconImage, title: "Product Outreach" },
-    { imageSrc: FastIconImage, title: "PR Campaign" },
-    { imageSrc: SimpleIconImage, title: "Product Expansion" }
+    { imageSrc: SimpleIconImage,
+      title: "Furniture and Accessories Support",
+      description: "We will provide you with the shopping urls for all furniture and decor pieces that fit perfectly into your creative vision and budget."
+    },
+    { imageSrc: CustomizeIconImage,
+      title: "Full service contracting",
+      description: "For larger projects, we will manage wall paneling, painting and construction projects in the Greater Seattle area. We serve Issaquah, Sammamish, and most of the Greater Seattle area"
+    },
+    { imageSrc: ReliableIconImage,
+      title: "Custom Wood-work",
+      description: "We do custom wood-work and builds for any specialized requests."
+    }
+/*    { imageSrc: FastIconImage, title: "PR Campaign" },
+    { imageSrc: SimpleIconImage, title: "Product Expansion" }*/
   ];
 
   return (
     <Container>
       <ThreeColumnContainer>
-        <Heading>Our Professional <span tw="text-primary-500">Services</span></Heading>
+        <Heading>Our Professional <span tw="text-red-500">Services</span></Heading>
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>
